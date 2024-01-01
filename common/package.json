@@ -1,0 +1,11 @@
+{
+  "name": "@tixfix/common",
+  "version": "1.0.0",
+  "description": "common modules for my app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chinmay Negi",
+  "license": "ISC"
+}
