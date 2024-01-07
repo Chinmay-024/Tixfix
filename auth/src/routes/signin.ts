@@ -1,10 +1,9 @@
 import express, { Request, Response } from "express";
-import { PasswordManager } from "../services/password-manager";
 import jwt from "jsonwebtoken";
-
 import { body } from "express-validator";
-import { validateRequest } from "../middlewares/validate-request";
-import { BadRequestError } from "../errors/bad-request-error";
+
+import { PasswordManager } from "../services/password-manager";
+import { validateRequest, BadRequestError } from "@tixfix/common";
 
 import { User } from "../models/user";
 
