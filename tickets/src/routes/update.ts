@@ -5,6 +5,7 @@ import {
   NotFoundError,
   requireAuth,
   NotAuthorizedError,
+  BadRequestError,
 } from "@tixfix/common";
 
 import { Ticket } from "../models/ticket";
@@ -31,6 +32,10 @@ router.put(
       throw new NotFoundError();
     }
 
+    if (ticket.orderId) {
+      throw new BadRequestError("Cannot Edit a resrent ticket");
+    }
+
     if (ticket.userId !== req.currentUser!.id) {
       throw new NotAuthorizedError();
     }
@@ -45,6 +50,7 @@ router.put(
       title: ticket.title,
       price: ticket.price,
       userId: ticket.userId,
+      version: ticket.version,
     });
     res.send(ticket);
   }

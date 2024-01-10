@@ -1,6 +1,6 @@
 {
   "name": "@tixfix/common",
-  "version": "1.0.7",
+  "version": "1.0.15",
   "description": "common modules for my app",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
