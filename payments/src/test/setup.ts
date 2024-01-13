@@ -3,9 +3,6 @@ import mongoose from "mongoose";
 
 import jwt from "jsonwebtoken";
 
-process.env.STRIPE_KEY =
-  "sk_test_51OX97UGu5l89HF3wWkwVQrKSVn7hCYBpKa6vYysZrNwgyLfVbtBuObVyNeO47I3cSS3A1WfXxDEvm0h3t5eK4LcT00Vg86Zd5X";
-
 let mongo: any;
 
 jest.mock("./../nats-wrapper");

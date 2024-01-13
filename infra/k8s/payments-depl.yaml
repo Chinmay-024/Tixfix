@@ -38,11 +38,11 @@ spec:
               value: ticketing
           resources:
             limits:
-              memory: "256Mi" # Set the desired memory limit
-              cpu: "200m"     # Set the desired CPU limit
+              memory: "512Mi" # Increase the memory limit to 512Mi
+              cpu: "400m"     # Increase the CPU limit to 400m
             requests:
-              memory: "128Mi" # Set the desired memory request
-              cpu: "100m"     # Set the desired CPU request
+              memory: "256Mi" # Increase the memory request to 256Mi
+              cpu: "200m"     # Increase the CPU request to 200m
 ---
 apiVersion: v1
 kind: Service
